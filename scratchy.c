@@ -22,8 +22,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
         WS_OVERLAPPEDWINDOW|ES_MULTILINE,
         CW_USEDEFAULT, CW_USEDEFAULT, 640, 480,
         NULL, NULL, hInstance, NULL);
-    if(hwnd == NULL)
-    {
+    if(hwnd == NULL) {
         MessageBox(NULL, "Could not create Scratch Pad window", "Error!",
             MB_ICONEXCLAMATION | MB_OK);
         return 0;
@@ -31,13 +30,11 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
     SetWindowText(hwnd,"");
     ShowWindow(hwnd, nCmdShow);
     UpdateWindow(hwnd);
-    while(GetMessage(&Msg, NULL, 0, 0) > 0)
-    {
+    while(GetMessage(&Msg, NULL, 0, 0) > 0) {
         TranslateMessage(&Msg);
         DispatchMessage(&Msg);
         if(!IsWindow(hwnd))
             break;
-            
     }
     return Msg.wParam;
 }
