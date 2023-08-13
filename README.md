@@ -5,6 +5,5 @@ The program just instantiates an edit control as an entire application.  I often
 
 I had tried out this concept years ago. I was amazed that a control that's intended to be a child window can actually function as a main window for an application.
 
-The EXE is available at:
-https://jiml.us/downloads/scratchy.zip
+The EXE is available at: https://jimlawless.net/downloads/scratchy.zip and https://jiml.us/downloads/scratchy.zip
 
